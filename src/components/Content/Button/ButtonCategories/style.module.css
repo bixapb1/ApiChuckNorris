@@ -1,0 +1,45 @@
+.caterogiesContainer {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.caterogiesBtn {
+  display: inline-block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #ababab;
+  margin: 0px 10px 15px 0px;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.caterogiesBtn input[name="categoies"] {
+  display: none;
+}
+.caterogiesBtn label {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 15px;
+  border: 2px solid #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+/* Checked */
+.caterogiesBtn input[name="categoies"]:checked + label {
+  color: #333333;
+  background: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.caterogiesBtn label:hover {
+  color: #666;
+}

@@ -1,0 +1,149 @@
+.main {
+  width: 960px;
+  padding-top: 40px;
+}
+.container {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 40px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+}
+
+.card {
+  border-radius: 20px;
+  margin-top: 20px;
+  background: #f8f8f8;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cardContainer {
+  width: 600px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+.heart {
+  padding-top: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+.cardId {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.cardId a {
+  text-decoration: none;
+  color: #8ea7ff;
+}
+.cardId span {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  padding-right: 2px;
+  text-align: left;
+  color: #ababab;
+}
+.cardId > svg {
+  padding-left: 5px;
+}
+.cardText {
+  padding-top: 5px;
+  padding-right: 40px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-top: 23px;
+  padding-bottom: 40px;
+}
+.cardDate {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ababab;
+}
+.cardDate span {
+  font-weight: 500;
+}
+.cardJokeType {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+  background: #ffffff;
+  padding: 6px 20px;
+  border-radius: 6px;
+}
+.error {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+  animation-duration: 2s;
+  animation-name: opacity;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
