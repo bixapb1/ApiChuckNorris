@@ -13,9 +13,8 @@ import {
 
 export default function Main() {
   const dispatch = useDispatch();
-  const typeSearch = useSelector((state) => state.typeSearch);
-  const jokes = useSelector((state) => state.jokes);
-  const error = useSelector((state) => state.error);
+  const { typeSearch, jokes, error } = useSelector((state) => state);
+
   function handlerBtnJoke() {
     if (typeSearch === "random") {
       dispatch(fetchRandomJoke());

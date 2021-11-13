@@ -1,8 +1,18 @@
 import style from "../Favorite/style.module.css";
 import Card from "../Card/index";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setFavoritesJokes } from "../../redux/action";
 export default function Favorite() {
+  const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites);
+  useEffect(() => {
+    const favoriteStorage = JSON.parse(localStorage.getItem("favoriteJokes"));
+    if (favoriteStorage) {
+      dispatch(setFavoritesJokes(favoriteStorage));
+    }
+  }, [dispatch]);
+
   return (
     <>
       <div className={style.favorite}>

@@ -10,13 +10,20 @@ export default function Card({ style, jokes }) {
   const remove = favorites.find((joke) => {
     return joke.id === jokes.id;
   });
+  function toLocalStorage(jokes) {
+    localStorage.setItem("favoriteJokes", JSON.stringify(jokes));
+  }
   function handlerFavoriteJoke() {
     if (remove) {
       const remove = favorites.filter((joke) => {
         return joke.id !== jokes.id;
       });
+      toLocalStorage([...remove]);
       return dispatch(setFavoritesJokes([...remove]));
-    } else dispatch(setFavoritesJokes([...favorites, jokes]));
+    } else {
+      toLocalStorage([...favorites, jokes]);
+      dispatch(setFavoritesJokes([...favorites, jokes]));
+    }
   }
 
   if (jokes.categories) {
@@ -41,10 +48,8 @@ export default function Card({ style, jokes }) {
             <div className={style.cardDate}>
               Last update: <span>{jokes.updated_at.slice(0, 19)}</span>
             </div>
-            {jokes.categories ? (
-              jokes.categories.length !== 0 ? (
-                <div className={style.cardJokeType}> {jokes.categories}</div>
-              ) : null
+            {jokes.categories.length !== 0 ? (
+              <div className={style.cardJokeType}> {jokes.categories}</div>
             ) : null}
           </div>
         </div>
