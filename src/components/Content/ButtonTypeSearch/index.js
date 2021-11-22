@@ -1,6 +1,6 @@
 import style from "../ButtonTypeSearch/style.module.css";
 import { useDispatch } from "react-redux";
-import { setTypeSearch } from "../../../../redux/action";
+import { setTypeSearch } from "../../../redux/action";
 export default function TypeSearchBtn({ nameBtn, value }) {
   const dispatch = useDispatch();
   return (

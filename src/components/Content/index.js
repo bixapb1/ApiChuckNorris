@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import style from "../Content/style.module.css";
 import Header from "./Header";
-import TypeSearchBtn from "./Button/ButtonTypeSearch/index";
-import Caterogies from "./Button/ButtonCategories/index";
-import Search from "./Button/SearchInput";
+import TypeSearchBtn from "./ButtonTypeSearch/index";
+import Caterogies from "./ButtonCategories/index";
+import Search from "./SearchInput";
 import Card from "../Card";
 import {
   fetchRandomJoke,
@@ -39,10 +39,10 @@ export default function Main() {
           </button>
           {jokes.result ? (
             jokes.result.map((joke) => {
-              return <Card key={joke.id} jokes={joke} style={style} />;
+              return <Card key={joke.id} joke={joke} style={style} />;
             })
           ) : (
-            <Card jokes={jokes} style={style} />
+            <Card joke={jokes} style={style} />
           )}
           <div className={style.error}>{error}</div>
         </div>

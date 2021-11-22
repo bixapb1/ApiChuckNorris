@@ -19,7 +19,7 @@ export default function Favorite() {
         <div className={style.container}>
           <div className={style.title}>Favorite</div>
           {favorites.map((joke) => {
-            return <Card key={joke.id} jokes={joke} style={style} />;
+            return <Card key={joke.id} joke={joke} style={style} />;
           })}
         </div>
       </div>

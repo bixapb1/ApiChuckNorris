@@ -1,6 +1,6 @@
 import style from "../ButtonCategories/style.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { setCategory } from "../../../../redux/action";
+import { setCategory } from "../../../redux/action";
 function Input({ category }) {
   const dispatch = useDispatch();
   return (

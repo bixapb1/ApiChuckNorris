@@ -85,6 +85,7 @@
   letter-spacing: 0em;
   text-align: left;
   color: #333333;
+  overflow-wrap: break-word;
 }
 .cardFooter {
   display: flex;

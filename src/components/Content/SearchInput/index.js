@@ -1,6 +1,6 @@
 import style from "../SearchInput/style.module.css";
 import { useDispatch } from "react-redux";
-import { setSearch } from "../../../../redux/action";
+import { setSearch } from "../../../redux/action";
 export default function Search() {
   const dispatch = useDispatch();
   return (
