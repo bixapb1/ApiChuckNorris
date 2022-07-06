@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/ApiChuckNorris/static/css/main.e951e68a.chunk.css",
-    "main.js": "/ApiChuckNorris/static/js/main.36f1f918.chunk.js",
-    "main.js.map": "/ApiChuckNorris/static/js/main.36f1f918.chunk.js.map",
-    "runtime-main.js": "/ApiChuckNorris/static/js/runtime-main.32134b78.js",
-    "runtime-main.js.map": "/ApiChuckNorris/static/js/runtime-main.32134b78.js.map",
+    "main.css": "/ApiChuckNorris/static/css/main.79f78cc5.chunk.css",
+    "main.js": "/ApiChuckNorris/static/js/main.e05ef5f1.chunk.js",
+    "main.js.map": "/ApiChuckNorris/static/js/main.e05ef5f1.chunk.js.map",
+    "runtime-main.js": "/ApiChuckNorris/static/js/runtime-main.431e7f65.js",
+    "runtime-main.js.map": "/ApiChuckNorris/static/js/runtime-main.431e7f65.js.map",
     "static/css/2.679831fc.chunk.css": "/ApiChuckNorris/static/css/2.679831fc.chunk.css",
-    "static/js/2.af66e20e.chunk.js": "/ApiChuckNorris/static/js/2.af66e20e.chunk.js",
-    "static/js/2.af66e20e.chunk.js.map": "/ApiChuckNorris/static/js/2.af66e20e.chunk.js.map",
-    "static/js/3.d31d64b4.chunk.js": "/ApiChuckNorris/static/js/3.d31d64b4.chunk.js",
-    "static/js/3.d31d64b4.chunk.js.map": "/ApiChuckNorris/static/js/3.d31d64b4.chunk.js.map",
+    "static/js/2.d8a5a7f3.chunk.js": "/ApiChuckNorris/static/js/2.d8a5a7f3.chunk.js",
+    "static/js/2.d8a5a7f3.chunk.js.map": "/ApiChuckNorris/static/js/2.d8a5a7f3.chunk.js.map",
+    "static/js/3.be45a52f.chunk.js": "/ApiChuckNorris/static/js/3.be45a52f.chunk.js",
+    "static/js/3.be45a52f.chunk.js.map": "/ApiChuckNorris/static/js/3.be45a52f.chunk.js.map",
     "index.html": "/ApiChuckNorris/index.html",
     "static/css/2.679831fc.chunk.css.map": "/ApiChuckNorris/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.e951e68a.chunk.css.map": "/ApiChuckNorris/static/css/main.e951e68a.chunk.css.map",
-    "static/js/2.af66e20e.chunk.js.LICENSE.txt": "/ApiChuckNorris/static/js/2.af66e20e.chunk.js.LICENSE.txt",
+    "static/css/main.79f78cc5.chunk.css.map": "/ApiChuckNorris/static/css/main.79f78cc5.chunk.css.map",
+    "static/js/2.d8a5a7f3.chunk.js.LICENSE.txt": "/ApiChuckNorris/static/js/2.d8a5a7f3.chunk.js.LICENSE.txt",
     "static/media/heart1.9db214df.svg": "/ApiChuckNorris/static/media/heart1.9db214df.svg",
     "static/media/heart2.95a9e352.svg": "/ApiChuckNorris/static/media/heart2.95a9e352.svg",
     "static/media/link.d4ed6c52.svg": "/ApiChuckNorris/static/media/link.d4ed6c52.svg",
     "static/media/message.435d8f6f.svg": "/ApiChuckNorris/static/media/message.435d8f6f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.32134b78.js",
+    "static/js/runtime-main.431e7f65.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.af66e20e.chunk.js",
-    "static/css/main.e951e68a.chunk.css",
-    "static/js/main.36f1f918.chunk.js"
+    "static/js/2.d8a5a7f3.chunk.js",
+    "static/css/main.79f78cc5.chunk.css",
+    "static/js/main.e05ef5f1.chunk.js"
   ]
 }
