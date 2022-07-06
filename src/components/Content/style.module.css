@@ -1,12 +1,42 @@
 .main {
-  width: 960px;
+  width: 60%;
   padding-top: 40px;
 }
 .container {
-  width: 680px;
   margin: 0 auto;
+  padding: 0 40px;
 }
-
+.logo {
+  display: flex;
+    justify-content: space-between;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.title {
+  padding-top: 10px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+}
+.subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 10px;
+}
 .btn {
   background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
   font-size: 16px;
@@ -21,7 +51,9 @@
   color: #ffffff;
   border: none;
 }
-
+.toogle {
+  display: none;
+}
 .card {
   border-radius: 20px;
   margin-top: 20px;
@@ -85,6 +117,7 @@
   letter-spacing: 0em;
   text-align: left;
   color: #333333;
+  overflow-wrap: break-word;
 }
 .cardFooter {
   display: flex;
@@ -117,33 +150,32 @@
   border-radius: 6px;
 }
 .error {
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
   letter-spacing: 0em;
-  text-align: center;
-  color: #333333;
-  animation-duration: 2s;
-  animation-name: opacity;
-  animation-iteration-count: infinite;
+  text-align: left;
+  color: #f42929;
+
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
+
+@media only screen and (max-width: 840px) {
+  .toogle {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    right: 30px;
   }
-  20% {
-    opacity: 0.8;
+  .main {
+    width: 100%;
   }
-  40% {
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
-  60% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
+  .bgToogle {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
   }
 }
