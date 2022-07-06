@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setFavoritesJokes } from "../../redux/action";
 export default function Favorite() {
   const dispatch = useDispatch();
-  const favorites = useSelector((state) => state.favorites);
+  const { favorites } = useSelector((state) => state);
   useEffect(() => {
     const favoriteStorage = JSON.parse(localStorage.getItem("favoriteJokes"));
     if (favoriteStorage) {
@@ -17,7 +17,7 @@ export default function Favorite() {
     <>
       <div className={style.favorite}>
         <div className={style.container}>
-          <div className={style.title}>Favorite</div>
+          <div className={style.title}> Favorite </div>
           {favorites.map((joke) => {
             return <Card key={joke.id} joke={joke} style={style} />;
           })}

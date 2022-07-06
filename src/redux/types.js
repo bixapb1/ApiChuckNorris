@@ -5,3 +5,6 @@ export const SEARCH = "SEARCH";
 export const JOKES = "JOKES";
 export const FAVORITES = "FAVORITES";
 export const ERROR = "ERROR";
+export const TOOGLE = "TOOGLE";
+export const CATEGORIESERROR = "CATEGORIESERROR";
+export const SEARCHERROR = "SEARCHERROR";

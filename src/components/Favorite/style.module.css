@@ -1,12 +1,12 @@
 .favorite {
-  width: 480px;
+  width: 40%;
   background: #f8f8f8;
   padding-top: 40px;
   min-height: 100vh;
 }
 .container {
-  width: 400px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .title {
@@ -109,4 +109,15 @@
 }
 .cardJokeType {
   display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  .favorite {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  .title {
+   opacity: 0;
+  }
 }

@@ -6,6 +6,9 @@ import {
   JOKES,
   FAVORITES,
   ERROR,
+  CATEGORIESERROR,
+  SEARCHERROR,
+  TOOGLE,
 } from "./types";
 
 export function setTypeSearch(type) {
@@ -30,6 +33,15 @@ export function setFavoritesJokes(joke) {
 export function setError(error) {
   return { type: ERROR, payload: error };
 }
+export function setErrorCategories(error) {
+  return { type: CATEGORIESERROR, payload: error };
+}
+export function setErrorSearch(error) {
+  return { type: SEARCHERROR, payload: error };
+}
+export function setToogle(toogle) {
+  return { type: TOOGLE, payload: toogle };
+}
 
 export function fetchCategoriesJoke() {
   return async (dispatch) => {
@@ -45,6 +57,8 @@ export function fetchRandomJoke() {
     const response = await fetch(url);
     const json = await response.json();
     dispatch(setError(null));
+    dispatch(setErrorCategories(null));
+    dispatch(setErrorSearch(null));
     dispatch(setJokes(json));
   };
 }
@@ -52,13 +66,17 @@ export function fetchCategoryJoke() {
   return async (dispatch, getState) => {
     const category = getState().category;
     if (!category) {
-      dispatch(setError("You have not selected a joke category!"));
+      dispatch(setError(null));
+      dispatch(setErrorSearch(null));
+      dispatch(setErrorCategories("You have not selected a joke category!"));
     } else {
       const url =
         `https://api.chucknorris.io/jokes/random?category=` + category;
       const response = await fetch(url);
       const json = await response.json();
       dispatch(setError(null));
+      dispatch(setErrorCategories(null));
+      dispatch(setErrorSearch(null));
       dispatch(setJokes(json));
     }
   };
@@ -67,19 +85,23 @@ export function fetchSearchJoke() {
   return async (dispatch, getState) => {
     const search = getState().search;
     if (search.length < 3 || search.length > 120) {
-      dispatch(setError("Line length must be between 3 and 120!"));
+      dispatch(setError(null));
+      dispatch(setErrorCategories(null));
+      dispatch(setErrorSearch("Line length must be between 3 and 120!"));
     } else {
       const url = `https://api.chucknorris.io/jokes/search?query=` + search;
       const response = await fetch(url);
       const json = await response.json();
       if (json.result.length === 0) {
         dispatch(
-          setError(
+          setErrorSearch(
             "No results were found for your search. Try searching again!"
           )
         );
       } else {
         dispatch(setError(null));
+        dispatch(setErrorCategories(null));
+        dispatch(setErrorSearch(null));
         dispatch(setJokes(json));
       }
     }

@@ -10,6 +10,7 @@ export default function TypeSearchBtn({ nameBtn, value }) {
         className={style.typeSearch}
         name="typeSearch"
         value={value ? value : nameBtn}
+        id={value ? value : nameBtn}
         onInput={(event) => {
           dispatch(setTypeSearch(event.target.value));
         }}

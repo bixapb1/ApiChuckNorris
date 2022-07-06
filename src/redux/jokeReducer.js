@@ -6,6 +6,9 @@ import {
   JOKES,
   FAVORITES,
   ERROR,
+  CATEGORIESERROR,
+  SEARCHERROR,
+  TOOGLE,
 } from "./types";
 
 const initStore = {
@@ -16,6 +19,9 @@ const initStore = {
   jokes: [],
   favorites: [],
   error: null,
+  searchError: null,
+  categoriesError: null,
+  toogle: false,
 };
 
 export const jokeReducer = (state = initStore, action) => {
@@ -40,6 +46,15 @@ export const jokeReducer = (state = initStore, action) => {
     }
     case ERROR: {
       return { ...state, jokes: [], error: action.payload };
+    }
+    case CATEGORIESERROR: {
+      return { ...state, jokes: [], categoriesError: action.payload };
+    }
+    case SEARCHERROR: {
+      return { ...state, jokes: [], searchError: action.payload };
+    }
+    case TOOGLE: {
+      return { ...state, toogle: action.payload };
     }
     default:
       return state;
